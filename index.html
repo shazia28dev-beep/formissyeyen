@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Gift From Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body 
+style="background-image: url(https://i.pinimg.com/736x/93/7f/dd/937fddfcd255fd32d195f27095beda4e.jpg);
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+" 
+class="flex justify-center h-screen items-center"
+  >
+  <div
+  class= "bg-white border px-8 py-16 border-4 border-pink-300 shadow-lg shadow-white-300 rounded-xl text-center animate__animated animate__backInLeft m-8 w-80"
+  id="kartu" 
+  >
+    <h1 class="text-4xl text-[#FF1493]  font-bold ">HAPPY TEACHER'S DAY!</h1>
+  
+    <h1 class="text-3xl font-[CherryBombOne] text-[#9CAF88] font-bold animate__animated animate__pulse animate__infinite">
+      Miss Yeyen ♡
+    </h1>
+    <button class="p-2 bg-pink-600 text-white rounded font-[CherryBombOne] mt-5 hover:bg-pink-900 transition ease-in w-full animate__animated aniamte__delay-1s animate__tada " onclick="ubahKartu()"
+    >Click Here Miss </button>
+  </div>
+ 
+   <script src= "https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.6.0/tsparticles.confetti.bundle.min.js"></script>
+ <script>confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: .6 }
+});
+let kartu = document.getElementById("kartu")
+function ubahKartu() {
+kartu.innerHTML = `<h1 class="font-semibold text-[#6B8E6B] text-wrap animate__animated animate__zoomIn ">
+Thank you for being such a kind and patient teacher. Thank you for all the lessons, advice, and care you have given us.
+
+We know that we are not always the easiest students to teach. Sometimes we are too noisy, forget things, or make mistakes. But we truly appreciate all your efforts and the way you always guide us.
+
+We hope you always stay healthy, happy, and surrounded by beautiful things. May your days be filled with joy, and may all the kindness you have shared with us come back to you in many wonderful ways.
+
+Happy Teachers' Day, Miss! 🌷
+</h1>
+<h2 class=" text-pink-500 font-[CherryBombOne] mt-3 animate__animated animate__fadeIn">- From your student who loves you the most, Miss.🤍 -</h2>
+</h1>
+ <button class="p-2 bg-pink-600 text-white rounded font-[CherryBombOne] mt-5 hover:bg-pink-900 transition ease-in w-full animate__animated aniamte__delay-1s animate__tada " onclick="refresh( )"
+    >
+      Close
+    </button>
+    `;
+      }
+      function refresh() {
+        location.reload();
+      }
+
+</script>  
+</body>
+</html>
